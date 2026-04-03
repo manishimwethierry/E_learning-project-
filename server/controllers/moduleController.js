@@ -1,6 +1,4 @@
 const pool = require('../config/db');
-
-// Teacher: Create/Upload Module
 exports.createModule = async (req, res) => {
     try {
         const { title, description, fileUrl, videoUrl, fileType } = req.body;
