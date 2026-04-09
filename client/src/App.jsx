@@ -65,7 +65,7 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/login"
-                className="px-8 py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 transition"
+                className="px-8 py-3 rounded-xl text-indigo font-semibold bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 transition"
               >
                 Login
               </a>
@@ -75,12 +75,15 @@ const Home = () => {
               >
                 Register
               </a>
-              <p className='text-bold text-indigo-700  animate-bounce'>welcome to our e-learning platform! created by MANISHIMWE Thierry</p>
+            </div>
+                <p>   Welcome to our e-learning platform! <br />
+                    <span className="text-black">Created by Manishimwe Thierry</span>
+                </p> 
             </div>
           </div>
         </div>
       </div>
-    </div>
+  
   );
 };
 
