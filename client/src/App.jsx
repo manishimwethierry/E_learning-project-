@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { AppProvider } from './contexts/AppContext';
 import { Login } from './components/Auth/Login';
@@ -62,10 +63,8 @@ const Home = () => {
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900">📚 E-Learning Management System</h1>
             <p className="mt-4 text-slate-600 text-lg md:text-xl">Digitizing education with interactive learning modules, progress tracking, and assessments.</p>
             <p className="mt-2 text-slate-500">Start with Login or Register to unlock your personalized dashboard.</p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                href="/login"
-                className="px-8 py-3 rounded-xl text-indigo font-semibold bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 transition"
+
+
               >
                 Login
               </a>
